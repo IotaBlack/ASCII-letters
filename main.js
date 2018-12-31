@@ -232,7 +232,7 @@ input.addEventListener('input', e => {
 })
 
 copyBtn.addEventListener('click', e => {
-    copyfield.innerText = (discord.checked)?"```"+toASCIILetters(input.value)+"```":toASCIILetters(input.value)
+    copyfield.textContent = (discord.checked)?"```"+toASCIILetters(input.value)+"```":toASCIILetters(input.value)
     copyfield.select()
     document.execCommand('copy')
 })
